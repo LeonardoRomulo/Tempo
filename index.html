@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Previsão do tempo</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <main>
         <div class="box">
-            <h1>Climax-Tempo</h1>
+            <h1 class="titulo">Climax-Tempo</h1>
             <div class="container-search limitar">
-                <input class="cidade" type="text" name="search-cidade" id="cidade" placeholder="Rio de Janeiro">
-                <button class="search" type="submit"></button>
+                <input class="input-cidade" type="text" name="search-cidade" id="cidade" placeholder="Rio de Janeiro">
+                <button class="btn-search" onclick="search()"><img src="https://www.svgrepo.com/show/488200/find.svg" alt=""></button>
             </div>
             <div class="container-info limitar">
-                <h2>Você está no <span>Rio de Janeiro</span></h2>
-                <p>Máxima de 22°C</p>
-                <p>Minima de 17ºC</p>
-                <p>nublado</p>
+                <h2 class="title">Cidade: <span class="city">Rio de Janeiro</span></h2>
+                <p class="temp">Agora: <span class="temperatura"> 30ºC</span></p>
+                <p class="temp-max">Máxima de <span class="temp-maxima">22°C</span></p>
+                <p class="temp-min">Minima de <span class="temp-minima">17ºC</span></p>
+                <div class="container-nuvens">
+                    <img class="icone-tempo" src="https://openweathermap.org/img/wn/04n.png" alt="icon">
+                    <p class="tempo">nublado</p>
+                    <p class=" umidade">umidade: <span>76%</span> </p>
+                </div>
 
             </div>
         </div>

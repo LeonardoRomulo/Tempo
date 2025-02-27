@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Opens Sans', sans-serif; 
 
 }
 
@@ -11,10 +13,12 @@
 }
 
 body {
-    background: url(../assets/phu-chi-fa-mist-sunrise-chiang-rai-province-thailand.jpg);
+    background: url("https://fastly.picsum.photos/id/560/1920/1089.jpg?hmac=4iGpa2pGSTTwn4HhXbDRhKbkxKGSAYl9z2yrzU7ZsnA");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 .container-search{
     width: 100%;
@@ -24,22 +28,27 @@ body {
 }
 
 .container-search input {
-    width: 450px;
-    border-radius: 5px;
+    width: calc(100% - 100px);
+    height: 32px;
+    border-radius: 15px;
     border: none;
-    padding: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
 }
 
-.container-search button {
-    width: 32px;
-    height: 32px;
+.btn-search {
+    width: 42px;
+    height: 42px;
     padding: 10px;
-    background: url(../assets/procurar\(1\).png);
-    background-position: center;
-    background-repeat: no-repeat;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 100%;
+    background-color: aqua;
+}
+
+.btn-search img {
+    width: 20px;
 }
 
 main {
@@ -50,7 +59,8 @@ main {
 }
 
 .box {
-    background-color: #0000008c;
+    background-color: #000000;
+    opacity: 0.7;
     width: 600px;
     height: 500px;
     display: flex;
@@ -61,17 +71,29 @@ main {
     border-radius: 25px;
 }
 
-.box h1 {
+.titulo {
     color: #ffffff;
     margin: 10px 0 30px 0;
+    font-size: 28px;
 }
 
-.box h2 {
+.cidade {
     color: #ffffff;
-    margin: 0 0 20px 0;
     font-weight: normal;
 }
 
+.temp-max, .temp-min, .temp{
+    font-size: 20px;
+    margin-top: 10px;
+    color:  #ffffff;
+}
+.tempo, .umidade {
+    font-size: 15px;
+}
+
+.title {
+    color: #ffffff;
+}
 .box span {
     font-weight: 700;
     color: aqua
@@ -84,12 +106,26 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
-    margin: 30px;
+}
+
+.container-nuvens {
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    gap: 15px;  
+}
+
+.container-nuvens .tempo{
+    color: aqua;
+}
+.container-nuvens img {
+    width: 40px;
 }
 
 .container-info p {
-    color: #ffffff;
     font-weight: 700;
+    text-transform: capitalize;
+    color:#ffffff
 }
 
 /* responsivo */
@@ -110,3 +146,4 @@ main {
     .container-info {
         width: 90%;
     }
+}
