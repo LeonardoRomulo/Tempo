@@ -9,8 +9,7 @@ function populateScreen(data){
     document.querySelector(".temp-minima").innerHTML =  (data.main.temp_min.toFixed(1)) +" ºC";
     document.querySelector(".tempo").innerHTML = (data.weather[0].description);
     document.querySelector(".umidade").innerHTML = "Umidade: " +parseInt(data.main.humidity) + "%";
-    document.querySelector(".icone-tempo").src=`https://openweathermap.org/img/wn${data.weather[0].icon}/.png`; // Há um bloqueio que não está retornando o icone e alterando a imagem na interface de acordo com aos estados da nuvem Ex.: se estiver parcialmente nublado  tem que trocar o icone para a imagem correspondente.
-}
+    document.querySelector(".icone-tempo").src = "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png"}
 
 // Aqui temos uma função que pega as informações da cidade na api e chama a função que retornará os valores solicitados para a interface do usuário
 async function searchCity (city) {
