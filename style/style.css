@@ -90,3 +90,22 @@ main {
     color: #ffffff;
     font-weight: 700;
 }
+
+/* responsivo */
+
+@media (max-width: 428px) {
+    .box {
+        width: 90%;
+    }
+
+    .container-search {
+        width: 90%;
+    }
+
+    .container-search input {
+        width: 80%;
+    }
+
+    .container-info {
+        width: 90%;
+    }
