@@ -13,7 +13,7 @@
 }
 
 body {
-    background: url("https://fastly.picsum.photos/id/560/1920/1089.jpg?hmac=4iGpa2pGSTTwn4HhXbDRhKbkxKGSAYl9z2yrzU7ZsnA");
+    background: url(" https://picsum.photos/1920/1089?random=1");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
