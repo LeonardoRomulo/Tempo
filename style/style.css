@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+.limitar {
+    max-width: 500px;
+}
+
+body {
+    background: url(/assets/phu-chi-fa-mist-sunrise-chiang-rai-province-thailand.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container-search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.container-search input {
+    width: 450px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.container-search button {
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    background: url(/assets/procurar\(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #0000008c;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 25px;
+}
+
+.box h1 {
+    color: #ffffff;
+    margin: 10px 0 30px 0;
+}
+
+.box h2 {
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+
+.box span {
+    font-weight: 700;
+    color: aqua
+}
+
+.container-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 30px;
+}
+
+.container-info p {
+    color: #ffffff;
+    font-weight: 700;
+}
