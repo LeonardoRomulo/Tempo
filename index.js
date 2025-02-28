@@ -13,6 +13,7 @@ function search(){
     async function searchCity (city) {
         const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`).then( response => response.json()); // integração da api
         populateScreen(data);
+        console.log(data);
     }
 
 // Função que pega as informações da cidade na api e chama a função que retornará os valores solicitados para a interface do usuário
